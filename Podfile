@@ -7,6 +7,7 @@ target 'FourSquaredClone' do
 
   # Pods for FourSquaredClone
   pod 'Swinject'
+  pod 'RxSwift'
 
   target 'FourSquaredCloneTests' do
     inherit! :search_paths

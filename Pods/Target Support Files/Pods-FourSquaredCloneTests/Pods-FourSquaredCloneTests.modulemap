@@ -1,0 +1,6 @@
+framework module Pods_FourSquaredCloneTests {
+  umbrella header "Pods-FourSquaredCloneTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

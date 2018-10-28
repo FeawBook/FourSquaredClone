@@ -22,6 +22,16 @@ platform :ios do
     capture_screenshots(workspace: "FourSquaredClone.xcworkspace", scheme: "FourSquaredClone")
   end
 
+  desc "Deploy a new version to the App Store"
+  lane :release do
+    gym(scheme: "FourSquaedClone") # Build your app - more options available
+    # deliver(force: true)
+    # slack(
+    #   message: "Claim Di Consumer has been submit on Apple Store."
+    # )
+    # frameit
+  end
+
   lane :example do
     puts("this is my first 🚀 lane")
  end

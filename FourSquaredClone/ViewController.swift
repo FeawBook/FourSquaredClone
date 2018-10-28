@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         DispatchQueue.global(qos: .background).async {
             print("test")
+            print("test 2")
         }
         // Do any additional setup after loading the view, typically from a nib.
     }

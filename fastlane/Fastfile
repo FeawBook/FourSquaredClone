@@ -35,4 +35,9 @@ platform :ios do
   lane :example do
     puts("this is my first 🚀 lane")
  end
+
+ desc "Create ipa"
+  lane :build do
+    gym(scheme: "FourSquaedClone") # Build your app - more options available
+  end
 end
